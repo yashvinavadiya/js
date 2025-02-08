@@ -1,12 +1,14 @@
-let input = 'e';
-if (
-    input === 'a' || input === 'A' ||
-    input === 'e' || input === 'E' ||
-    input === 'i' || input === 'I' ||
-    input === 'o' || input === 'O' ||
-    input === 'u' || input === 'U'
-) {
-    console.log(true);
-} else {
-    console.log(false);
-}
+
+function checkstring(str) {
+
+    let n=str.length;  
+    
+    for (let i = 0; i < n; i++) {
+        if (str[i] == "a" || str[i] == "e" || str[i] == "i" || str[i] == "o" || str[i] == "u")
+            return true;
+    }
+    
+    return false;
+    }
+    
+    console.log(checkstring("red"));
