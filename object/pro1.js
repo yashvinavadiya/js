@@ -22,7 +22,13 @@ let students = {
 
     skills: ["html", "css", "js", "node"],
 
+    sum:()=>{
+        console.log(students.status);
+    }
+
 };
+
+students.sum();
 
 console.log(students.add[0].name, students.add[0].number);
 let n = students.skills.length;
