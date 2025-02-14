@@ -24,8 +24,8 @@ let students = {
 
     sum:()=>{
         console.log(students.status);
+        
     }
-
 };
 
 students.sum();
