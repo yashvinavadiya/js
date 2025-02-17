@@ -1809,7 +1809,7 @@ for (let i = 0; i < products.length; i++){
         <P class= ${products[i].rating >3 ? "green":"red"}>${products[i].rating}</p>
         <p class="p1">${products[i].stock}stock</p>
         <p class="p1">${products[i].tags}tags</p>
-        <img src="${products[i].thumbnail}"/>
+       <div class="img">  <img src="${products[i].thumbnail}"/></div>
        
     </div>`
 }
