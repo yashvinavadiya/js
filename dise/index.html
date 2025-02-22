@@ -7,14 +7,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <h1>Dice Game</h1>
-    <div>
-        <p>Player 1: <span id="player1" class="dice">🎲</span></p>
-        <p>Player 2: <span id="player2" class="dice">🎲</span></p>
-    </div>
-    <h2 id="result">Click to Roll!</h2>
-    <button onclick="rollDice()">Roll Dice</button>
-    
+
+     <div class="wrapper">
+        <div class="heading">
+            <h1>Roll the dise</h1>
+        </div>
+        <div class="dise-img">
+            <img src="./img/coverpage.png" alt="img" id="diseimage">
+        </div>
+        <div class="button">
+            <button id="rollbutton">Roll</button>
+        </div>
+
+     </div>
 </body>
 <script src="./index.js"></script>
 </html>
