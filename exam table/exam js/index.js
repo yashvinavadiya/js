@@ -58,50 +58,47 @@ const uimaker =()=>{
 
     });
 };
-
-
-    document.getElementById("newEmploy").addEventListener("submit", function  handelsubmit (e) {
-        e.preventDefault();
+const handelsubmit =(e)=>{
+    e.preventDefault();
     
-        let img=document.getElementById("img").value;
-        let name=document.getElementById("name").value;
-        let number=document.getElementById("number").value;
-        let email=document.getElementById("email").value;
-        let jobRoll=document.getElementById("jobRoll").value;
-        let experience=document.getElementById("experience").value;
-        let Sallery=document.getElementById("Sallery").value;
-        let experiencelevel="";
-        if(experience<3){
-            experiencelevel="Junior";
-        }
-        else if(experience>=3 && experience<5){
-            experiencelevel="middle";
-        }
-        else{
-            experiencelevel="Senior";
-        }
-
-        console.log(experience);
-        if(experience>1 && experience<3){
-            console.log("junior");
-
-        }
-    
-        let newEmploy={
-            img:img,
-            name:name,
-            number:number,
-            email:email,
-            jobRoll:jobRoll,
-            experience:experience,
-            Sallery:Sallery,
-            experiencelevel:experiencelevel
-        };
-    
-        arr.push(newEmploy);
-    
-        uimaker();
-    
+    let img=document.getElementById("img").value;
+    let name=document.getElementById("name").value;
+    let number=document.getElementById("number").value;
+    let email=document.getElementById("email").value;
+    let jobRoll=document.getElementById("jobRoll").value;
+    let experience=document.getElementById("experience").value;
+    let Sallery=document.getElementById("Sallery").value;
+   
+    if(experience<3){
+        experiencelevel="Junior";
     }
-);
+    else if(experience>=3 && experience<5){
+        experiencelevel="middle";
+    }
+    else{
+        experiencelevel="Senior";
+    }
+
+   
+
+    let newEmploy={
+        img:img,
+        name:name,
+        number:number,
+        email:email,
+        jobRoll:jobRoll,
+        experience:experience,
+        Sallery:Sallery,
+        experiencelevel:experiencelevel
+    };
+
+    arr.push(newEmploy);
+
+    uimaker();
+
+};
+
+
+    document.getElementById("newEmploy").addEventListener("submit",   handelsubmit)
+       
    

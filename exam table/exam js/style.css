@@ -3,3 +3,23 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+
+.form{
+    position: relative;
+   margin-left: 30%;
+   width: 600px;
+   height: 500px;
+   background-color: #A9B5DF;
+   border: 1px solid black;
+   border-radius: 20px;
+   
+ }
+ img{
+    width: 50px;
+ }
+ .t1{
+    
+  display: flex;
+  justify-content: center;
+ }
