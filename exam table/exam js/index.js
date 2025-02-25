@@ -84,6 +84,7 @@ const uimaker =()=>{
         console.log(experience);
         if(experience>1 && experience<3){
             console.log("junior");
+
         }
     
         let newEmploy={
