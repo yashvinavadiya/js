@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.box1 {
+    width: 300px;
+    height: 200px;
+}
+
+.box2 {
+    width: 300px;
+    height: 200px;
+}
+
+.box3 {
+    width: 300px;
+    height: 200px;
+}
+
+.icon1 {
+    font-size: 60px;
+    text-align: center;
+}
+
+.t1 {
+    font-size: 30px;
+    text-align: center;
+
+}
+
+#count {
+    font-size: 30px;
+    text-align: center;
+}
+
+#count1 {
+    font-size: 30px;
+    text-align: center;
+
+}
+
+#count2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.maindiv {
+    margin-top: 10%;
+    background-image: url("https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm00MjItMDczLWt6cGhnMjR1LmpwZw.jpg");
+}
