@@ -47,6 +47,11 @@
 }
 
 .maindiv {
-    margin-top: 10%;
+    margin-top: 5%;
     background-image: url("https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm00MjItMDczLWt6cGhnMjR1LmpwZw.jpg");
+}
+.t2{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 100px;
 }
