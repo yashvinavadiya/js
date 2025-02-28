@@ -7,12 +7,11 @@ class student{
     }
 }
 
- class vipstudent extends student {
+ class vipstudent extends student() {
         constructor(name,number,grid,course,fee){
              
                 super(name, number, grid, course);
                 this.fee=fee;   
-        
     }
 
     leave(){
@@ -33,4 +32,4 @@ console.log(std);
  let vip=new vipstudent("jensie",98765432,9035,"fullstack",5000);
  vip.leave();
  vip.printdetails();
- console.log(vip);
+ 
