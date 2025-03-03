@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#counter{
+    font-size: 30px;
+    text-align: center;
+}
+.t1{
+    text-align: center;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+#start{
+    width: 80px;
+    height: 40px;
+    font-size: 20px;
+   
+}
+
+#stop{
+    width: 80px;
+    height: 40px;
+    font-size: 20px;
+   
+}
+
+#resent{
+    width: 80px;
+    height: 40px;
+    font-size: 20px;
+   
+}
