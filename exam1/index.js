@@ -1,38 +1,31 @@
 let count = 0;
-let counterInterval;
-const counterDisplay = document.getElementById('counter');
-const start = document.getElementById('start');
-const stop = document.getElementById('stop');
-const resent = document.getElementById('resent');
+let val;
 
-function updateCounterDisplay() {
-  counterDisplay.textContent = count;
-}
+let start = document.getElementById('start');
+let stop = document.getElementById('stop');
+let resent = document.getElementById('resent');
 
 start.addEventListener('click', function() {
-  if (!counterInterval) {  
-    counterInterval = setInterval(function() {
+  if (!val) {  
+    val = setInterval(function() {
       count++;
-      updateCounterDisplay();
+      document.getElementById('counter').innerHTML = count;
     }, 300);
-    start.disabled = true;  
-    stop.disabled = false; 
+   
   }
 });
 
 stop.addEventListener('click', function() {
-  clearInterval(counterInterval);  
-  counterInterval = null;
-  start.disabled = false; 
-  stop.disabled = true;  
+  clearInterval(val);  
+  val = null;
+ 
 });
 
 resent.addEventListener('click', function() {
   count = 0;  
-  updateCounterDisplay();
-  clearInterval(counterInterval); 
-  counterInterval = null;
-  start.disabled = false; 
-  stop.disabled = true;  
+  document.getElementById('counter').innerHTML = count;
+  clearInterval(val); 
+  val= null;
+ 
 });
 
