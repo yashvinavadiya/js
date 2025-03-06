@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up form</title>
+
+    <style>
+        .passed {
+            border: 2px solid green;
+        }
+
+        .err {
+            border: 2px solid red;
+        }
+
+        #userdata {
+            margin-left: 30%;
+            width: 400px;
+            height: 300px;
+            background-color: #b5a8d5bb;
+            border: 1px solid black;
+            border-radius: 20px;
+        }
+
+        .t1 {
+            text-align: center;
+        }
+        #name{
+            width: 200px;
+            height: 20px;
+            border-radius: 10px;
+         
+        }
+        #email{
+            width: 200px;
+            height: 20px;
+            border-radius: 10px;
+        }
+        #number{
+            width: 200px;
+            height: 20px;
+            border-radius: 10px;
+        }
+        #password{
+            width: 200px;
+            height: 20px;
+            border-radius: 10px;
+        }
+        .box1{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="userdata">
+        <h1 class="t1">sign up form</h1>
+
+       <div class="box1">
+        <input type="text" placeholder="name" id="name"><br><br>
+       </div>
+
+      <div class="box1">
+        <input type="email" placeholder="email" id="email"><br><br>
+      </div>
+
+        <div class="box1">
+            <input type="number" placeholder="number" id="number"><br><br>
+        </div>
+
+       <div class="box1">
+        <input type="password" placeholder="password" id="password"><br><br>
+       </div>
+
+        <div class="box1">
+            <input type="submit">
+        </div>
+    </form>
+
+</body>
+<script src="./index.js"></script>
+
+</html>
