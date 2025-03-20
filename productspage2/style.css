@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.box{
+    height: 600px;
+    width: 600px;
+    background-color:#FFEDFA;
+    margin: auto;
+    border-radius: 20px;
+
+    
+}
+.box1{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#women{
+    width: 100px;
+    height: 30px;
+    font-size: 25px;
+}
+
+#men{
+    width: 100px;
+    height: 30px;
+    font-size: 25px;
+}
+
+#kids{
+    width: 100px;
+    height: 30px;
+    font-size: 25px;
+}
+
+#all{
+    width: 100px;
+    height: 30px;
+    font-size: 25px;
+}
+.btn{
+    height: 40px;
+    width: 70px;
+    font-size: 20px;
+}
+
+#lth{
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+}
+
+#htl{
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+}
