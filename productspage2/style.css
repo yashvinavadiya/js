@@ -4,57 +4,86 @@
     box-sizing: border-box;
 }
 .box{
-    height: 600px;
     width: 600px;
-    background-color:#FFEDFA;
-    margin: auto;
+    height: 600px;
+    background-color:#B5A8D5;
     border-radius: 20px;
+    margin: auto;
+    padding-left: 10%;
+   
+}
 
-    
-}
-.box1{
-    display:flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
 #women{
-    width: 100px;
+    width: 80px;
     height: 30px;
-    font-size: 25px;
+    font-size: 20px;
+    border-radius: 10px;
 }
 
 #men{
-    width: 100px;
+    width: 80px;
     height: 30px;
-    font-size: 25px;
+    font-size: 20px;
+    border-radius: 10px;
 }
 
 #kids{
-    width: 100px;
+    width: 80px;
     height: 30px;
-    font-size: 25px;
+    font-size: 20px;
+    border-radius: 10px;
 }
 
 #all{
-    width: 100px;
+    width: 80px;
     height: 30px;
-    font-size: 25px;
+    font-size: 20px;
+    border-radius: 10px;
 }
 .btn{
     height: 40px;
     width: 70px;
     font-size: 20px;
+    border-radius: 10px;
 }
 
 #lth{
     width: 100px;
     height: 30px;
     font-size: 20px;
+    border-radius: 10px;
 }
 
 #htl{
     width: 100px;
     height: 30px;
     font-size: 20px;
+    border-radius: 10px;
+}
+#likebtn{
+    width: 70px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+#title{
+    width: 160px;
+    height: 25px;
+    border-radius: 10px;
+}
+
+#price{
+    width: 160px;
+    height: 25px;
+    border-radius: 10px;
+}
+
+#img{
+    width: 160px;
+    height: 25px;
+    border-radius: 10px;
+}
+#productlist{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
 }

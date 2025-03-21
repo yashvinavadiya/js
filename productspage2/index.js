@@ -3,6 +3,7 @@ const getvalue = (id) => {
 };
 
 let products = JSON.parse(localStorage.getItem("products")) || [];
+let like= JSON.parse(localStorage.getItem("like")) || [];
 
 const uimaker = (products) => {
 
@@ -26,12 +27,24 @@ const uimaker = (products) => {
         let button = document.createElement("p");
         button.append(btn);
 
+        let likebtn=document.createElement("button");
+        likebtn.innerHTML="likebbtn";
+
+        
+
         btn.addEventListener("click",()=>handledelete(i))
+        likebtn.addEventListener("click",()=>{
+            like.push(product)
+            localStorage.setItem("like",JSON.stringify(like));
+        })
 
         let category = document.createElement("p");
         category.innerHTML = product.category;
 
-        document.getElementById("productlist").append(title, price, img, category,button);
+        let div= document.createElement("div");
+        div.append(title, price, img, category,button,likebtn);
+
+        document.getElementById("productlist").append(div);
     });
 
 };
@@ -84,11 +97,17 @@ const handlesubmit = (e) => {
     products.push(product);
     uimaker(products);
     localStorage.setItem("products", JSON.stringify(products));
-
-
-
-
 }
 uimaker(products);
+
+const search=(value)=>{
+    let temp=products.filter((ele)=>ele.title.toLowerCase().includes(value.toLowerCase()));
+    uimaker(temp);
+   
+}
+document.getElementById("search").addEventListener("input",()=>{
+    let value=getvalue("search");
+    search(value);
+});
 
 document.getElementById("product").addEventListener("submit", handlesubmit)
