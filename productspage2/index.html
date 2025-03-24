@@ -7,17 +7,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div>
+        <a href="./like.html">like page</a>
+    </div>
    <div class="box">
     <form id="product"><div class="box1">
 
-        <label for="">Title:</label>
+        <label >Title:</label>
         <input type="text" id="title"><br><br>
 
-       <label for="">Price:</label>
+       <label >Price:</label>
         <input type="number" id="price"><br><br>
 
-        <label for="">Img:</label>
-        <input type="text" id="img"><br><br>
+        <label >Img:</label>
+        <input type="url" id="img"><br><br>
         <select  id="category">
             <option value="">select</option>
             <option value="women">women</option>
@@ -26,19 +29,25 @@
         </select><br><br>
         <input type="submit" value="submit" class="btn"><br><br></div>
     
-        <div id="productlist"></div>
+        
     
         </form>
-        <button id="lth">low to high</button><br><br>
-        <button id="htl">high to low</button><br><br>
-    
-        <button id="women">women</button><br><br>
-        <button id="men">men</button><br><br>
-        <button id="kids">kids</button><br><br>
-        <button id="all">all</button><br><br>
-        <button id="likebtn">like</button><br><br>
+        
         <input type="text" id="search" placeholder="search">
+ <div>
+    <button id="lth">low to high</button>
+        <button id="htl">high to low</button>
+    
+        <button id="women">women</button>
+        <button id="men">men</button>
+        <button id="kids">kids</button>
+        <button id="all">all</button>
+       
+ </div>
+
+
    </div>
+   <div id="productlist"></div>
     
 </body>
 <script src="./index.js"></script>

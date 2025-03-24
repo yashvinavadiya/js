@@ -5,9 +5,10 @@ const getvalue = (id) => {
 let products = JSON.parse(localStorage.getItem("products")) || [];
 let like= JSON.parse(localStorage.getItem("like")) || [];
 
+
 const uimaker = (products) => {
 
-    document.getElementById("productlist").innerHTML = ""
+    document.getElementById("productlist").innerHTML = " ";
     products.map((product,i) => {
         let title = document.createElement("p");
         title.innerHTML = product.title;
@@ -16,7 +17,7 @@ const uimaker = (products) => {
         price.innerHTML = product.price;
 
         let image = document.createElement("img");
-        image.src = product.img;
+        image.src = product.image1;
 
         let img = document.createElement("p");
         img.append(image);
@@ -34,20 +35,44 @@ const uimaker = (products) => {
 
         btn.addEventListener("click",()=>handledelete(i))
         likebtn.addEventListener("click",()=>{
-            like.push(product)
-            localStorage.setItem("like",JSON.stringify(like));
+            if(isExists(product.id))
+            {
+                alert("product already exists");
+                uimaker(products);
+            }
+            else{
+                like.push(product)
+                alert("added");
+                localStorage.setItem("like",JSON.stringify(like));
+                uimaker(products);
+            } 
         })
+   
 
         let category = document.createElement("p");
         category.innerHTML = product.category;
 
         let div= document.createElement("div");
-        div.append(title, price, img, category,button,likebtn);
+        div.append( img,title, price, category,button,likebtn);
 
         document.getElementById("productlist").append(div);
     });
 
 };
+
+uimaker(products);
+
+const isExists=(id)=>{
+    for(let i=0;i<like.length;i++)
+    {
+        if(like[i].id==id)
+        {
+            return true;
+        }
+    }
+    return false;
+}
+
 
 
 const handlesort=(orderby)=>{
@@ -91,14 +116,15 @@ const handlesubmit = (e) => {
     let product = {
         title: getvalue("title"),
         price: getvalue("price"),
-        img: getvalue("img"),
+        image1: getvalue("img"),
         category: getvalue("category"),
+        id:Date.now()
     };
     products.push(product);
     uimaker(products);
     localStorage.setItem("products", JSON.stringify(products));
 }
-uimaker(products);
+
 
 const search=(value)=>{
     let temp=products.filter((ele)=>ele.title.toLowerCase().includes(value.toLowerCase()));
