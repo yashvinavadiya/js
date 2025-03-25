@@ -4,32 +4,20 @@ const getvalue = (id) => {
 
 let value=JSON.parse(localStorage.getItem("value1")) || [];
 
-const handlesubmit=(e) => {
-e.preventDefault();
 
-     let value1={
-        title:getvalue("title"),
-        description:getvalue("description"),
-        img:getvalue("img"),
-        category:getvalue("category"),
-
-     }
-     value.push(value1);
-     localStorage.setItem("value1",JSON.stringify(value));
-}
 const uimaker=(value) => {
     
 
     document.getElementById("ui").innerHTML=" ";
     value.map((news,i)=>{
-        let title = document.createElement("title");
+        let title = document.createElement("h1");
         title.innerHTML=news.title;
 
-        let description= document.createElement("description");
+        let description= document.createElement("p");
         description.innerHTML=news.description;
 
         let img = document.createElement("img");
-        img.src=news.img1;
+        img.src=news.img;
 
         let image=document.createElement("p");
         image.append(img);
@@ -47,7 +35,7 @@ const uimaker=(value) => {
         category.innerHTML=news.category;
 
         let div=document.createElement("div");
-        div.append(title,description,image,button,category);
+        div.append(title,image,description,category,button);
 
         document.getElementById("ui").append(div);
     });
@@ -55,16 +43,34 @@ const uimaker=(value) => {
 
 const handledelet=(i) => {
     value.splice(i,1);
-    localStorage.setItem("value",JSON.stringify(value));
+    localStorage.setItem("value1",JSON.stringify(value));
     uimaker(value);
 
 }
 
- const search=(value)=>{
-    let temp=value.filter((ele)=>ele.title.tolowercase().includes(value.tolowercase));
+ const searching=(value1)=>{
+    let temp=value.filter((ele)=>ele.title.toLowerCase().includes(value1.toLowerCase()));
         uimaker(temp);
  }
 
+ document.getElementById("search").addEventListener("input",()=>{
+    let value=getvalue("search");
+    searching(value);
+ });
+
+ const filterbycategory=(category)=>{
+    if(category=="all")
+    {
+        uimaker(value)
+        return;
+    }
+    let temp=value.filter((categ)=>categ.category==category);
+    uimaker(temp);
+ }
+
+ document.getElementById("food").addEventListener("click",()=>filterbycategory("food"));
+document.getElementById("clothing").addEventListener("click",()=>filterbycategory("clothing"));
+document.getElementById("health").addEventListener("click",()=>filterbycategory("health"));
+document.getElementById("all").addEventListener("click",()=>filterbycategory("all"));
 
 uimaker(value);
-document.getElementById("form").addEventListener("submit",handlesubmit)

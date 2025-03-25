@@ -3,3 +3,27 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 500px;
+}
+#food{
+    height: 30px;
+    width: 100px;
+    font-size: 17px;
+}
+
+#clothing{
+    height: 30px;
+    width: 100px;
+    font-size: 17px;
+}
+
+#health{
+    height: 30px;
+    width: 100px;
+    font-size: 17px;
+}

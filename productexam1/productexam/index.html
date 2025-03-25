@@ -7,28 +7,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form id="form">
-        <label>Title:</label>
-        <input type="text" id="title">
 
-        <label>Description:</label>
-        <textarea id="description" rows="4" cols="50"></textarea>
 
-        <label>Img:</label>
-        <input type="url" id="img">
+    <div>
+        <button><a href="./index.html">home page</a></button>
+        <button><a href="./form.html">form page</a></button>
+    </div>
 
-        <label>Category</label>
-        <select id="category">
-            <option value="">Select Category</option>
-            <option value="food">food</option>
-            <option value="clothing">Clothing</option>
-            <option value="health">health</option>
-        </select>
-        <button type="submit">Submit</button>
-    </form>
+    <hr>
+    
+<div class="box">
+    <div>
+        <input type="text" id="search" placeholder="search">
+        <button id="food">food</button>
+        <button id="clothing">clothing</button>
+        <button id="health">health</button>
+        <button id="all">all</button>
+    </div>
+    
 
-    <input type="text" id="search" placeholder="search">
     <div id="ui"></div>
+</div>
+    
 </body>
 <script src="./index.js"></script>
 </html>

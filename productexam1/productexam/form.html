@@ -6,18 +6,29 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="text" id="search" placeholder="search">
-    <div>
-        <button id="lth">low to high</button>
-        <button id="htl">high to low</button>
+    <a href="./index.html">homepage</a><br><br><hr>
+    <form id="form">
+        <label>Title:</label>
+        <input type="text" id="title">
 
-    </div>
-    <div>
-        <button><a href="./index.html">home page</a></button>
-        <button><a href="./form.html">form page</a></button>
-    </div>
+        <label>Description:</label>
+        <textarea id="description" rows="4" cols="50"></textarea>
 
-    <div id="ui"></div>
+        <label>Img:</label>
+        <input type="url" id="img">
+
+        <label>Category</label>
+        <select id="category">
+            <option value="">Select Category</option>
+            <option value="food">food</option>
+            <option value="clothing">Clothing</option>
+            <option value="health">health</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+
+   
     
 </body>
+<script src="./form.js"></script>
 </html>
