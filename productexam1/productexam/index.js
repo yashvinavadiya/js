@@ -60,6 +60,11 @@ const handledelet=(i) => {
 
 }
 
+ const search=(value)=>{
+    let temp=value.filter((ele)=>ele.title.tolowercase().includes(value.tolowercase));
+        uimaker(temp);
+ }
+
 
 uimaker(value);
 document.getElementById("form").addEventListener("submit",handlesubmit)
