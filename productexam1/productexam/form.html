@@ -4,27 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <a href="./index.html">homepage</a><br><br><hr>
+
+    <h1 class="t1">NEWS</h1>
+   
     <form id="form">
         <label>Title:</label>
-        <input type="text" id="title">
+        <input type="text" id="title"><br><br>
 
         <label>Description:</label>
-        <textarea id="description" rows="4" cols="50"></textarea>
+        <textarea id="description" rows="3" cols="23"></textarea><br><br>
 
         <label>Img:</label>
-        <input type="url" id="img">
+        <input type="url" id="img"><br><br>
 
-        <label>Category</label>
+        <label>Category:</label>
         <select id="category">
             <option value="">Select Category</option>
             <option value="food">food</option>
             <option value="clothing">Clothing</option>
             <option value="health">health</option>
-        </select>
-        <button type="submit">Submit</button>
+        </select><br><br>
+        <button type="submit" class="submit">Submit</button>
+
+        <div>
+           <button class="bt2"> <a href="./index.html">homepage</a></button>
+        </div>
     </form>
 
    
