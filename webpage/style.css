@@ -154,18 +154,68 @@
  .ti1{   
      text-align: center;
  }
- .bt2{  
-     text-align: center;
-     background-color: black;
-     color: white;
-     height: 30px;
-     width: 100px;
-     border-radius: 10px;
- }
- .bt2:hover{
-    background-color: white;
-    color: black;
- }
  .ti3{
      text-align: center;
+ }
+ #htl{
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+ }
+ #lth{
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+ }
+ #Laptop{
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+ }
+ #Computer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+ }
+ #all{
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+ }
+ #search{
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 30px;
+    width: 150px;
+    border-radius: 10px;
+ }
+ .b{
+    width: 900px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #FDB7EA;
+ }
+ .AddToWishList{
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 30px;
+    width: 150px;
+    border-radius: 10px;
  }
