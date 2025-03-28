@@ -219,3 +219,31 @@
     width: 150px;
     border-radius: 10px;
  }
+
+ /*signup*/
+
+ .btn2{
+    height: 30px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+ }
+ .form{
+    border: 1px solid black;
+    height: 300px;
+    width: 400px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 10px;
+ }
+ #name{
+    border-radius: 10px;
+ }
+ #email{
+    border-radius: 10px;
+ }
+#password{
+    border-radius: 10px;
+}
