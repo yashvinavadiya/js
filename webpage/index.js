@@ -105,15 +105,17 @@ let data=[ {
     }
     document.getElementById("products").innerHTML = temp;
   
-    addToCartListener(); // Re-attach event listeners
+    addToCartListener(); // Attach event listeners
   };
   
-  const isExists = (id) => Wishlist.some((item) => item.id == id);
+  // Check if product exists in Wishlist
+  const isExists = (id) => Wishlist.findIndex((item) => item.id == id);
   
   const addToCartListener = () => {
       document.querySelectorAll(".AddToWishList").forEach((button) => {
           button.addEventListener("click", (e) => {
               const productId = e.target.getAttribute("data-id");
+              const productIndex = isExists(productId);
               const product = data.find((p) => p.id == productId);
   
               if (!product) {
@@ -121,17 +123,23 @@ let data=[ {
                   return;
               }
   
-              if (isExists(product.id)) {
-                  alert("This product is already added to the wishlist.");
+              if (productIndex !== -1) {
+                  // Product already exists → Increase quantity
+                  Wishlist[productIndex].quantity += 1;
+                  alert("Product quantity increased in the wishlist.");
               } else {
-                  product.quantity = 1; // Set default quantity
+                  // Product does not exist → Add with quantity = 1
+                  product.quantity = 1;
                   Wishlist.push(product);
-                  localStorage.setItem("Wishlist", JSON.stringify(Wishlist));
-                  alert("Your product has been added to the wishlist.");
+                  alert("Product added to the wishlist.");
               }
+  
+              localStorage.setItem("Wishlist", JSON.stringify(Wishlist));
           });
       });
   };
+  
+  uimaker(data);
 
   // for sorting
   const handleSort = (orderby) => {
