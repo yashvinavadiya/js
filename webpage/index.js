@@ -105,35 +105,32 @@ let data=[ {
     }
     document.getElementById("products").innerHTML = temp;
   
-    addtocart(data);
+    addToCartListener(); // Re-attach event listeners
   };
   
-
-  const IsExists = (id) => {
-    return Wishlist.some((item) => item.id == id);
-  };
+  const isExists = (id) => Wishlist.some((item) => item.id == id);
   
- 
-  const addtocart = (data) => {
-    document.querySelectorAll(".AddToWishList").forEach((button) => {
-      button.addEventListener("click", (e) => {
-        const productId = e.target.getAttribute("data-id");
-        const product = data.find((p) => p.id == productId);
+  const addToCartListener = () => {
+      document.querySelectorAll(".AddToWishList").forEach((button) => {
+          button.addEventListener("click", (e) => {
+              const productId = e.target.getAttribute("data-id");
+              const product = data.find((p) => p.id == productId);
   
-        if (!product) {
-          console.error("Product not found!");
-          return;
-        }
+              if (!product) {
+                  console.error("Product not found!");
+                  return;
+              }
   
-        if (IsExists(product.id)) {
-          alert("This product is already added");
-        } else {
-          Wishlist.push(product);
-          localStorage.setItem("Wishlist", JSON.stringify(Wishlist));
-          alert("Your product has been added ");
-        }
+              if (isExists(product.id)) {
+                  alert("This product is already added to the wishlist.");
+              } else {
+                  product.quantity = 1; // Set default quantity
+                  Wishlist.push(product);
+                  localStorage.setItem("Wishlist", JSON.stringify(Wishlist));
+                  alert("Your product has been added to the wishlist.");
+              }
+          });
       });
-    });
   };
 
   // for sorting
