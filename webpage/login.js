@@ -33,5 +33,17 @@ const handlesubmit=(e)=>{
     }
 };
 
+document.querySelector("#email").addEventListener("input",(e)=>{
+    let email=e.target.value;
+    let emailregex= /^[^@]+@[^@]+\.[^@]+$/;
+    if(emailregex.test(email)){
+        document.getElementById("email").setAttribute("class","passed")
+    }
+    else{
+        document.getElementById("email").setAttribute("class","error")
+    }
+})
+
+
 document.getElementById("login").addEventListener("submit",handlesubmit);
 

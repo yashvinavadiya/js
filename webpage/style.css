@@ -264,4 +264,11 @@
     border-radius: 10px;
     background-color: #D1F8EF;
 }
-
+.passed{
+    border: 1px solid green;
+    outline: 1px solid green;
+}
+.error{
+    border: 1px solid red;
+    outline: 1px solid red;
+}
