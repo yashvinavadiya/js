@@ -8,7 +8,6 @@ const isExists=(email)=>{
     else{
         return{found:false,user:isuser};
     }
-// };
 
 }
 const handlesubmit=(e)=>{
