@@ -19,12 +19,14 @@ const handlesubmit=(e)=>{
 
     if(isExists(users.email)){
         alert("user already exists");
+
         return;
     }
     else{
         users.push(user);
         localStorage.setItem("users",JSON.stringify(users));
         alert("user created successfully");
+        window.location.href="./login.html"
         document.getElementById("SignUp").reset();
     }
 };
