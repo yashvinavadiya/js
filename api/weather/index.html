@@ -10,42 +10,38 @@
 </head>
 
 <body>
-
-    
- 
-    <!-- <header class="m-5 ">
-      <div class="container">
-        <form action="" class="location-search">
-          <input
-            type="text"
-            name=""
-            id="search"
-            placeholder="Find your location ..."
-          />
-          <input type="button" value="Find" />
-          <p
-            id="errorMessage"
-            class="text-warning p-3 d-none position-absolute"
-          >
-            Please enter a real location ..
-          </p>
-        </form>
-        <div class="weather-body">
-          <div class="row">
-            <div class="col-md-4 p-0">
-              <div id="todayWeather"></div>
-            </div>
-            <div class="col-md-4 p-0">
-              <div id="tomorrowWeather"></div>
-            </div>
-            <div class="col-md-4 p-0">
-              <div id="dayAfterTomorrowWeather"></div>
-            </div>
+  <header class="m-5">
+    <div class="container">
+      <!-- Location Search Bar -->
+      <form action="javascript:void(0);" class="location-search">
+        <input
+          type="text"
+          id="search"
+          placeholder="Find your city ..."
+        />
+        <input type="button" value="Find" />
+        <p id="errorMessage" class="text-warning p-3 d-none position-absolute">
+          Please enter a real location ..
+        </p>
+      </form>
+  
+      <!-- Weather Display Area -->
+      <div class="weather-body">
+        <div class="row">
+          <div class="col-md-4 p-0">
+            <div id="todayWeather"></div>
+          </div>
+          <div class="col-md-4 p-0">
+            <div id="tomorrowWeather"></div>
+          </div>
+          <div class="col-md-4 p-0">
+            <div id="dayAfterTomorrowWeather"></div>
           </div>
         </div>
       </div>
-    </header> -->
-    <div class="weather-card"></div>   
+    </div>
+  </header>
+    
 
 </body>
 <script src="./index.js"></script>
