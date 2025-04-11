@@ -26,6 +26,7 @@ const handlesubmit=(e)=>{
     messages.push(message);
     localStorage.setItem("messages",JSON.stringify(messages));
     alert("created successfully");
+    window.location.href ="./login.html"
     document.getElementById("signup").reset();
    }
   

@@ -105,7 +105,7 @@ let data=[ {
     }
     document.getElementById("products").innerHTML = temp;
   
-    addToCartListener(); // Attach event listeners
+    addToCartListener(); 
   };
   
   // Check if product exists in Wishlist
@@ -124,11 +124,11 @@ let data=[ {
               }
   
               if (productIndex !== -1) {
-                  // Product already exists → Increase quantity
+                 
                   Wishlist[productIndex].quantity += 1;
                   alert("Product quantity increased in the wishlist.");
               } else {
-                  // Product does not exist → Add with quantity = 1
+                 
                   product.quantity = 1;
                   Wishlist.push(product);
                   alert("Product added to the wishlist.");
