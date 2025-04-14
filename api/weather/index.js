@@ -87,30 +87,39 @@ input.addEventListener("keypress", (e) => {
 });
 
 
-const getlocation=()=>{
-  navigator.geolocation.getCurrentPosition((pos)=>{
-    console.log(pos.coord);
-    const lat=pos.coord.lat
-    const long=pos.coord.lon
-    fetchWeatherbylocatiobn(lat,long)
-    
-  })
-}
-
-
-const fetchWeatherbylocatiobn = async (lat,long) => {
-  try {
-    const res = await fetch(
-      `https://api.weatherapi.com/v1/forecast.json?key=f363c6f19c364fe5955182616230308&q=${city}&days=3`
-    );
-    if (!res.ok) throw new Error("City not found");
-    const data = await res.json();
-    createWeatherUI(data);
-  } catch (err) {
-    document.querySelector("#errorMessage").classList.remove("d-none");
-    setTimeout(() => {
-      document.querySelector("#errorMessage").classList.add("d-none");
-    }, 3000);
-  }
-};
-fetchWeather("Mumbai");
+const getlocation = () => {
+    navigator.geolocation.getCurrentPosition((pos) => {
+      console.log(pos.coords);
+      const lati = pos.coords.latitude; 
+      const long = pos.coords.longitude; 
+      checkWeatherbylocation(lati, long);
+    },
+    (err) => {
+      console.error("Geolocation error:", err.message);
+      alert("Unable to fetch location. Please allow location access.");
+    });
+  };
+  
+  getlocation()
+  
+  
+  const checkWeatherbylocation = async (lati, long) => {
+    let req = await fetch(
+      `https://api.openweathermap.org/data/2.5/weather?lat=${lati}&lon=${long}&appid=97ed86b99fdcf738c7a080e0fa9fde20&units=metric`);
+  
+    if (!req.ok) {
+      alert("City not found");
+      console.error("City not found");
+      return;
+    }
+  
+    let res = await req.json();
+    console.log(res);
+    createWeatherUI(res);
+  };
+  setTimeout(() => {
+    if (!weatherCard.innerHTML.trim()) {
+        fetchWeather("Mumbai");
+    }
+  }, 3000);
+  
