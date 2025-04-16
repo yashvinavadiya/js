@@ -21,6 +21,12 @@ const handleSubmit = (e) => {
   Product(product);
 }
 
+const deletedata=async(id)=>{
+  await fetch(`http://localhost:3000/products/${id}`,{
+    method:"DELETE"
+  });
+};
+
 
 const getdata=async()=>{
   try{
@@ -49,9 +55,13 @@ const uimaker = (product) => {
   img.src = product.img;
   img.style.width = "150px";
   img.style.height = "150px";
+  let dlebtn=document.createElement("div")
+  dlebtn.innerHTML="delete"
+
+  dlebtn.addEventListener("click",()=>deletedata(product.id))
 
   let div = document.createElement('div');
-  div.append(img, title, price);
+  div.append(img, title, price,dlebtn);
 
   document.getElementById("productList").append(div);
 }
