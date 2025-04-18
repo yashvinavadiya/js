@@ -17,15 +17,40 @@ const handleSubmit = (e) => {
       price: document.getElementById('price').value,
       img: document.getElementById('img').value
   }
+  if(id==-1){
+    Product(product);
+  }
+  else{
+    update(product)
+  }
 
-  Product(product);
+
 }
+let id=-1
 
 const deletedata=async(id)=>{
   await fetch(`http://localhost:3000/products/${id}`,{
     method:"DELETE"
   });
 };
+
+const addtoform=(data)=>{
+  setvalue("title",data.title)
+  setvalue("price",data.price)
+  setvalue("img",data.img)
+  id=data.id
+  setvalue("type",update)
+}
+const setvalue=(id,value)=>{
+  document.getElementById(id).value=value
+}
+const update=async(data)=>{
+  await fetch(`http://localhost:3000/products/${id}`,{
+    method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+  });
+}
 
 
 const getdata=async()=>{
@@ -57,11 +82,14 @@ const uimaker = (product) => {
   img.style.height = "150px";
   let dlebtn=document.createElement("div")
   dlebtn.innerHTML="delete"
+  let updatebtn=document.createElement("btn")
+  updatebtn.innerHTML="UPDATE"
+  updatebtn.addEventListener("click",()=>addtoform(product))
 
   dlebtn.addEventListener("click",()=>deletedata(product.id))
 
   let div = document.createElement('div');
-  div.append(img, title, price,dlebtn);
+  div.append(img, title, price,dlebtn,updatebtn);
 
   document.getElementById("productList").append(div);
 }
