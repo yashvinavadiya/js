@@ -1,3 +1,36 @@
 {
-    "users":[]
+  "users": [
+    {
+      "id": "96a6",
+      "name": "yashvi",
+      "email": "yashu55@gmail.com",
+      "password": "yashu43"
+    },
+    {
+      "id": "1e6d",
+      "email": "yashu55@gmail.com",
+      "password": "yashu43"
+    },
+    {
+      "id": "0b4d",
+      "email": "purv65@gmail.com",
+      "password": "Purv4211"
+    },
+    {
+      "id": "14b6",
+      "email": "purv65@gmail.com",
+      "password": "Purv4211"
+    },
+    {
+      "id": "e438",
+      "email": "purv65@gmail.com",
+      "password": "Purv4211"
+    },
+    {
+      "id": "86c6",
+      "name": "yashvi",
+      "email": "yashvinavadiya241@gmail.com",
+      "password": "yashu21"
+    }
+  ]
 }
