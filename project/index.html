@@ -3,60 +3,91 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>home page</title>
-  </head>
-  
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
-    crossorigin="anonymous"/>
-  <body>
-    <!--navbar-->
-   <div class="container-fluid">
-    <div id="navbar">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./pages/addproduct.html">Addto cart</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./pages/cart.html">Cart</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./pages/product.html">Product</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./pages/signup.html">Sign in</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./pages/login.html">Log in</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- bootstreap cdn start -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- bootsreap cdn end -->
+  </head>
+  <body>
+    <!-- header start -->
+    <div class="container-fluid">
+      <div id="navbar"></div>
     </div>
 
-   </div>
+    <!-- header end -->
+
+    <!--home page start-->
+    <section>
+      <div class="container-fluid m-0 p-0">
+        <div class="container-fluid m-0 p-0 hero">
+          <div class="img">
+            <div class="colorh">
+              <p class="text-center text-light p1">WELCOME TO FLORIST</p>
+              <h1 class="text-center text-light p2">
+                Let's Make Beautiful Flowers <br />
+                a Part of Your Life.
+              </h1>
+              <p class="text-center text-light">
+                Explore a vibrant tapestry of blooms and arrangements that add
+                color, fragrance, and elegance to your life. <br />
+                Discover the perfect floral expression for every moment and
+                occasion.
+              </p>
+              <button class="bt1">SHOP NOW</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section>
+      <div class="container-fluid m-0 p-0">
+        <div class="bg m-0 p-0">
+
+          <div class="box-1  border border-danger-subtle border-start">
+            <p>01</p>
+            <h1 class="t1">Order Online</h1>
+            <p>Share some details here. This is <br> Flexible section where you can share  anything you want.</p>
+          </div>
+
+          <div class="box-1">
+             <p>02</p>
+            <h1 class="t1">Free Shipping</h1>
+            <p>Share some details here. This is <br> Flexible section where you can share  anything you want.</p>
+          </div>
+
+          <div class="box-1">
+             <p>03</p>
+            <h1 class="t1">More Freshness</h1>
+            <p>Share some details here. This is <br> Flexible section where you can share  anything you want.</p>
+          </div>
+
+          <div class="box-1">
+             <p>04</p>
+            <h1 class="t1">Safe Payment</h1>
+            <p>Share some details here. This is <br> Flexible section where you can share  anything you want.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!--home page end-->
   </body>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-    crossorigin="anonymous"></script>
-    <script type="module" src="./javascript/index.js"></script>
+  <script type="module" src="./javascript/index.js"></script>
 </html>

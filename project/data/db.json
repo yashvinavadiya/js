@@ -1,36 +1,29 @@
 {
   "users": [
     {
-      "id": "96a6",
-      "name": "yashvi",
-      "email": "yashu55@gmail.com",
-      "password": "yashu43"
-    },
-    {
-      "id": "1e6d",
-      "email": "yashu55@gmail.com",
-      "password": "yashu43"
-    },
-    {
-      "id": "0b4d",
-      "email": "purv65@gmail.com",
-      "password": "Purv4211"
-    },
-    {
-      "id": "14b6",
-      "email": "purv65@gmail.com",
-      "password": "Purv4211"
-    },
-    {
-      "id": "e438",
-      "email": "purv65@gmail.com",
-      "password": "Purv4211"
-    },
-    {
-      "id": "86c6",
+      "id": "e3f4",
       "name": "yashvi",
       "email": "yashvinavadiya241@gmail.com",
       "password": "yashu21"
     }
-  ]
+  ],
+  "products": [
+    {
+      "id": "e8ae",
+      "title": "yashvi",
+      "price": "23456",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuS8AimFv-GUOXPAeo6uz-2YIl9btD5P2xzA&s",
+      "desc": "sfwsfhtyoi",
+      "Category": "electronics"
+    },
+    {
+      "id": "0cb4",
+      "title": "nidhi",
+      "price": "43",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuS8AimFv-GUOXPAeo6uz-2YIl9btD5P2xzA&s",
+      "desc": "fjgfmt",
+      "Category": "clothing"
+    }
+  ],
+  "carts": []
 }

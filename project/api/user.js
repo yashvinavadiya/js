@@ -21,10 +21,11 @@ const userMethod = {
             })
         },
 
-        login:async(users)=>{
-            let req=await fetch(`${Baseurl}?email=${users.email}&password=${users.password}`);
-            let res=await req.json()
-            return res;
+        login: async (user) =>{
+            let req= await fetch(`${Baseurl}?email=${user.email}&password=${user.password}`);
+            let res =await req.json()
+            return res 
+
         }
                 
    

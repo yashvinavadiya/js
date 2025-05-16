@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.head1{
+    background-color: #B5A8D5;
+}
+.p1{
+    font-size: 20px;
+}
+.img1{
+    border-radius: 20px;
+    height: 320px;
+    width: 300px;
+    background-image: url(./img/img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.img2{
+    border-radius: 20px;
+    height: 320px;
+    width: 300px;
+    background-image: url(./img/img2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.img3{
+    border-radius: 20px;
+    height: 320px;
+    width: 300px;
+    background-image: url(./img/img3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.img4{
+    border-radius: 20px;
+    height: 320px;
+    width: 300px;
+    background-image: url(./img/img4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.bgcolor{
+        height: 320px;
+        width: 290px;
+        background-color: rgba(64, 53, 53, 0.43);
+        padding-top: 80%;
+        border-radius: 20px;
+    
+}
+
+.img5{
+    border-radius: 20px;
+    height: 320px;
+    width: 300px;
+    background-image: url(./img/img5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.img6{
+    border-radius: 20px;
+    height: 320px;
+    width: 300px;
+    background-image: url(./img/img6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.img7{
+    border-radius: 20px;
+    height: 320px;
+    width: 300px;
+    background-image: url(./img/img7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.img8{
+    border-radius: 20px;
+    height: 320px;
+    width: 300px;
+    background-image: url(./img/img8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.bt1{
+    border-radius: 20px;
+    height: 30px;
+    width: 150px;
+   margin-left: 15%;
+}
+.bt1:hover{
+    background-color: black;
+    color: white;
+}
+.p2{
+    color: white;
+    padding: 2px;
+}
+
+
+/* prodect page */
+
+
+.img{
+    border: 1px solid black;
+    border-radius: 20px;
+   width: 300px ;
+   height: 150px; 
+    
+ }
+ .box{
+     width: 300px;
+    
+     height: 400px;
+     border: 2px solid black;
+     border-radius: 10px;
+     background-color: #BCCCDC;
+    
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     margin-left: 150px;
+
+ }
+ .box:hover{
+    background-color: #FFDFEF;
+ }
+ .flex{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 250px; 
+ }
+
+ .ti{   
+     font-size: 16px  ;
+     text-align: center;
+ }
+ .ti1{   
+     text-align: center;
+ }
+ .ti3{
+     text-align: center;
+ }
+ #htl{
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+ }
+ #lth{
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+ }
+ #Laptop{
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+ }
+ #Computer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+ }
+ #all{
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+ }
+ #search{
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 30px;
+    width: 150px;
+    border-radius: 10px;
+ }
+ .b{
+    width: 900px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #FDB7EA;
+ }
+ .AddToWishList{
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 30px;
+    width: 150px;
+    border-radius: 10px;
+ }
+
+ /*signup*/
+
+ .btn2{
+    height: 30px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+ }
+ .btn2:hover{
+    background-color: white;
+    color: black;
+ }
+ .form{
+    border: 1px solid black;
+    height: 300px;
+    width: 350px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 10px;
+    background-color: #F7CFD8;
+ }
+ #name{
+    border-radius: 10px;
+ }
+ #email{
+    border-radius: 10px;
+ }
+#password{
+    border-radius: 10px;
+}
+
+/*login*/
+.form1{
+    height: 250px;
+    width: 250px;
+    border: 1px solid black;
+    padding: 20px;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 10px;
+    background-color: #D1F8EF;
+}
+.passed{
+    border: 1px solid green;
+    outline: 1px solid green;
+}
+.error{
+    border: 1px solid red;
+    outline: 1px solid red;
+}
