@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+ 
+}
+.bgimg{
+   background-image: url(https://images.ctfassets.net/hrltx12pl8hq/3YXNkUFe8YTtgtwAZUDFgq/8e42e15d9e337f0cfeac5152acef1182/SSTK_LP_Video-Background_1200x627.jpg?fit=fill&w=1200&h=630);
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+h1 {
+  margin-bottom: 10px;
+  color: white;
+
+}
+
+select {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px;
+  flex: 1 0 30%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+#cases:hover{
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+}
+#deaths:hover{
+  border-radius: 20px;
+   background-color: black;
+  color: white;
+}
+#recovered:hover{
+  border-radius: 20px;
+   background-color: black;
+  color: white;
+}
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin: 20px auto;
+  animation: spin 1s linear infinite;
+}
+
+.hidden {
+  display: none;
+}
+
+.error {
+  color: red;
+  margin-top: 20px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+#country-select{
+  border-radius: 10px;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 5%;
+}
