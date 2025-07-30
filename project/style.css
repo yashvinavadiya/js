@@ -45,7 +45,36 @@
     width: 250px;
      margin-top: 5%;
      padding: 10px;
+     border-left: 2px solid rgba(217, 84, 84, 0.78);
 }
 .t1{
     font-size: 20px;
+}
+.about1{
+    border-radius:45%  45%0 0
+}
+.about2{
+    height: 424px;
+     border-radius:45%  45%0 0
+}
+.t2{
+    color:  rgba(227, 104, 60, 0.887);
+    font-size: 17px;
+}
+.ab{
+    margin-top: 10%;
+}
+.bt2{
+    width: 150px;
+    height: 50px;
+    background-color: rgba(227, 104, 60, 0.887);
+    color: white;
+     border-radius: 10px;
+    border: 1px  white;
+}
+.bgi{
+    background-color: rgba(239, 210, 215, 0.325);
+    height: 100vh;
+    width: 100%;
+    margin-top: 5%;
 }
